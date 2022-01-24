@@ -10,12 +10,11 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Bookily'),
         centerTitle: true,
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.black,
       ),
       body:Center(
         child:Container(
           child: Text('Well come To $days days of Flutter by $name'),
-          color: Colors.deepPurpleAccent,
         ),
       ),
       drawer: Drawer(
