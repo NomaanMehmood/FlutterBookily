@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterui/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   int days= 30;
@@ -10,16 +11,13 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Bookily'),
         centerTitle: true,
-        backgroundColor: Colors.black,
       ),
       body:Center(
         child:Container(
           child: Text('Well come To $days days of Flutter by $name'),
         ),
       ),
-      drawer: Drawer(
-
-      ),
+      drawer: MyDrawer(),
 
 
     );

@@ -12,12 +12,29 @@ class _LoginPageState extends State<LoginPage> {
   // username with welcome
   String name=" ";
   bool changeButton=false;
+  final _formkey= GlobalKey<FormState>();
+
+  moveToHome(BuildContext context) async{
+    if(_formkey.currentState!.validate()) {
+      setState(() {
+        changeButton = true;
+      });
+      await Future.delayed(Duration(seconds: 1));
+      await Navigator.pushNamed(context, MyRoutes.homeRoute);
+      setState(() {
+        changeButton = false;
+      });
+    }
+
+  }
 
   @override
   Widget build(BuildContext context) {
     return Material(
         color: Colors.white,
         child: SingleChildScrollView(
+          child: Form(
+            key: _formkey,
             child: Column(
               children:[
                 Image.asset(
@@ -38,12 +55,22 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
-                    child: Column(children: [
+                    child: Column(
+                      children: [
                       TextFormField(
                         decoration: const InputDecoration(
                             hintText: "Enter User Name",
                             labelText: "Username"
                         ),
+
+                        validator:(value){
+                           if(value!.isEmpty){
+                             return "username cannot be empty";
+                           }
+                           else
+                             return null;
+                        },
+
                         onChanged: (value){
                           name= value;
                           setState(() {
@@ -58,20 +85,22 @@ class _LoginPageState extends State<LoginPage> {
                           hintText: "Enter Password",
                           labelText: "password",
                         ),
+
+                        validator:(value){
+                          if(value!.isEmpty){
+                            return "password cannot be empty";
+                          }
+                          else
+                            return null;
+                        },
                       ),
                       const SizedBox(
                         height: 30.0,
                       ),
                       //inkwell provides clickable container properties
                       InkWell(
-                        onTap: () async{
-                          setState(() {
-                            changeButton=true;
-                          });
-                          await Future.delayed(Duration(seconds: 1));
-                          Navigator.pushNamed(context, MyRoutes.homeRoute);
+                        onTap: () =>moveToHome(context),
 
-                        },
 
                       child: AnimatedContainer(
                         duration: Duration(seconds: 1),
@@ -113,6 +142,8 @@ class _LoginPageState extends State<LoginPage> {
 
               ],
             )
+          )
+
         )
     );
   }
