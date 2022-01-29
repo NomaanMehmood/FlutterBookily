@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterui/pages/Account.dart';
+import 'package:flutterui/pages/Library.dart';
 import 'package:flutterui/pages/home_page.dart';
 import 'package:flutterui/pages/login_page.dart';
 import 'package:flutterui/utils/routes.dart';
@@ -21,11 +23,14 @@ class MyApp extends StatelessWidget {
       theme: MyTheme.lightTheme(context),
       debugShowCheckedModeBanner: false,
       darkTheme: MyTheme.darkTheme(context),
-      initialRoute: MyRoutes.homeRoute,
+      initialRoute: MyRoutes.loginRoute,
       routes: {
-        "/" :(context) => LoginPage(),
-        MyRoutes.loginRoute: (context) => LoginPage(),
+        "/" :(context) => const LoginPage(),
+        "/library" :(context) => const LibraryPage(),
+        MyRoutes.loginRoute: (context) => const LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.libraryRoute: (context)=> const LibraryPage(),
+        MyRoutes.AccountRoute: (context)=> const AccountPage(),
       },
       );
   }
