@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "756610135815",
+    "project_id": "bookily-3d52a",
+    "storage_bucket": "bookily-3d52a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756610135815:android:6d96b6d4e29765c4b777a2",
+        "android_client_info": {
+          "package_name": "com.example.flutterui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756610135815-olhcfird5i4v8tp4d74a6vh268u9qvnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutterui",
+            "certificate_hash": "fca4a1d31670ecd0968598cc68df9f590704bcde"
+          }
+        },
+        {
+          "client_id": "756610135815-jurl0l7813qblhsdo77mcs02ve40crnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNJT0sY-j-IZsctRzAOWwRa2FHkC3vJ1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756610135815-jurl0l7813qblhsdo77mcs02ve40crnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

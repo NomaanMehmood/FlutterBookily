@@ -6,11 +6,12 @@ class MyTheme {
     primarySwatch: Colors.deepPurple,
     fontFamily: GoogleFonts.poppins().fontFamily,
     appBarTheme: AppBarTheme(
-    color: Colors.white,
-    iconTheme: IconThemeData(color: Colors.black),
-    titleTextStyle: TextStyle(color: Colors.black, fontSize: 20),
+    color: Color(0xff181E36),
+    iconTheme: IconThemeData(color: Colors.white),
+    titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
     elevation: 0.0,
   ),
+
   );
 
   static ThemeData darkTheme(BuildContext context)=> ThemeData(

@@ -1,0 +1,62 @@
+{
+  "Books": [
+    {
+      "id":1,
+      "title": "Dracula",
+      "Description":"Chapter 1",
+      "Image":"assets/images/dracula.png",
+      "audio_file": "https://etc.usf.edu/lit2go/audio/mp3/dracula-001-chapter-1.4115.mp3"
+    },
+    {
+      "id":2,
+      "title": "Dracula-2",
+      "Description":"Chapter 2",
+      "Image":"assets/images/dracula.png",
+      "audio_file": "https://etc.usf.edu/lit2go/audio/mp3/dracula-002-chapter-2.4116.mp3"
+    },
+    {
+      "id":3,
+      "title": "Dracula-3",
+      "Description":"Chapter 3",
+      "Image":"assets/images/dracula.png",
+      "audio_file": "https://etc.usf.edu/lit2go/audio/mp3/dracula-003-chapter-3.4117.mp3"
+    },
+    {
+      "id":4,
+      "title": "A Christmas Carol",
+      "Description":"STAVE I",
+      "Image":"assets/images/A_Christmas_Carol.png",
+      "audio_file": "https://etc.usf.edu/lit2go/audio/mp3/a-christmas-carol-002-stave-i.2824.mp3"
+      },
+    {
+      "id":5,
+      "title": "A Christmas Carol",
+      "Description":"STAVE II",
+      "Image":"assets/images/A_Christmas_Carol.png",
+      "audio_file": "https://etc.usf.edu/lit2go/audio/mp3/a-christmas-carol-003-stave-ii.2825.mp3"
+
+    },
+    {
+      "id":6,
+      "title": "A Christmas Carol",
+      "Description":"STAVE III",
+      "Image":"assets/images/A_Christmas_Carol.png",
+      "audio_file": "https://etc.usf.edu/lit2go/audio/mp3/a-christmas-carol-004-stave-iii.2826.mp3"
+    },
+    {
+      "id":7,
+      "title": "Alice's in WonderLand",
+      "Description":"Chapter I",
+      "Image":"assets/images/aliceAW.png",
+      "audio_file": "https://etc.usf.edu/lit2go/audio/mp3/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
+    },
+    {
+      "id":8,
+      "title": "Alice's in WonderLand",
+      "Description":"Chapter I",
+      "Image":"assets/images/aliceAW.png",
+      "audio_file": "https://etc.usf.edu/lit2go/audio/mp3/alices-adventures-in-wonderland-002-chapter-ii-the-pool-of-tears.3.mp3"
+    }
+  ]
+
+}
